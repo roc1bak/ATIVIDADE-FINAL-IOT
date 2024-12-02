@@ -1,0 +1,284 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internet das Coisas</title>
+  <link rel="stylesheet" href="cssdetodasasareas.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <style>
+    /* Adicionando a imagem de fundo com gradiente de opacidade */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('cntimage.jpg'); /* Caminho da imagem de fundo */
+      background-size: cover; /* Faz com que a imagem cubra toda a tela */
+      background-position: center; /* Centraliza a imagem */
+      background-attachment: fixed; /* Faz com que a imagem fique fixa ao rolar a página */
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%), url('cntimage.jpg'); /* Gradiente com opacidade */
+    }
+
+    .your-carousel {
+      max-width: 800px;
+      margin: auto; /* Centraliza o carrossel */
+      margin-top: 10%;
+    }
+
+    section {
+      text-align: center; /* Centraliza o texto */
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.7); /* Fundo semi-transparente para destacar o conteúdo */
+      border-radius: 10px; /* Bordas arredondadas */
+    }
+
+    header {
+      background-color: #d3d3d3; /* Cor de fundo cinza claro */
+      color: #000; /* Cor do texto em preto */
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    nav li {
+      margin-right: 20px;
+    }
+
+    nav a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    main {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 20px;
+      justify-content: space-around;
+    }
+
+    section h2 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .your-carousel img {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+    }
+
+    p {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: 20px;
+      text-align: left;
+    }
+
+    .youtube-video {
+      width: 100%;
+      height: 315px;
+      border: none;
+    }
+
+    video {
+      width: 100%;
+      max-height: 315px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Internet das Coisas</h1>
+  </header>
+  <main>
+    <div class="your-carousel">
+      <div>
+        <section id="internetdascoisas">
+          <h2>Internet das Coisas</h2>
+          <hr>
+          <p> O que é?</p>
+          <p> A Internet das Coisas (IoT) é um conceito que se refere à interconexão digital de objetos físicos com a internet, permitindo que dispositivos se comuniquem entre si e com usuários, facilitando a automação e o controle remoto. </p>
+          <p> Atividade Favorita</p>
+          <p> Minha atividade favorita de Internet das Coisas foi a lixeira automática, onde aprendi a automatizar o funcionamento de uma lixeira, utilizando sensores ultrassônicos e Arduino para abrir a tampa quando uma pessoa se aproxima. </p>
+          <p> Professor e Matéria</p>
+          <p> Professor: Glauco | Matéria: Internet das Coisas</p>
+        </section>
+      </div>
+
+      <!-- Novo slide com imagem e texto abaixo -->
+      <div>
+        <section id="iot-image">
+          <h2>Imagem da Internet das Coisas</h2>
+          <hr>
+          <img src="carrinho.jpg" alt="Internet das Coisas">
+          <p> Acima é uma foto mostrando o projeto de Internet das Coisas um carrinho segue Linha que realizei com meus colegas de turma.</p>
+        </section>
+      </div>
+
+      <!-- Novo slide com link do YouTube -->
+      <div>
+        <section id="youtube">
+          <h2>Vídeo sobre Internet das Coisas</h2>
+          <hr>
+          <iframe class="youtube-video" src="https://youtube.com/shorts/MmWPoLWmUHE?feature=shared" title="Vídeo do Carrinho Segue Linha com Arduino"></iframe>
+          <p> Veja esse vídeo para entender melhor como a Internet das Coisas está transformando o mundo. </p>
+          <a href="https://youtube.com/shorts/MmWPoLWmUHE?feature=shared" target="_blank"> Link do Vídeo</a>
+        </section>
+      </div>
+
+      <!-- Novo slide: Irrigador Automático -->
+      <div>
+        <section id="irrigador-automatico">
+          <h2>Irrigador Automático</h2>
+          <hr>
+          <img src="irrigador.jpeg" alt="Irrigador Automático">
+          <p> Nesse projeto, realizamos a construção de um irrigador automático utilizando sensores de umidade e Arduino. O sistema liga automaticamente a água para irrigar plantas quando o solo está seco. </p>
+        </section>
+      </div>
+
+      <!-- Novo slide: Lixeira Automática (agora com vídeo local .mp4) -->
+      <div>
+        <section id="lixeira-automatica">
+          <h2>Lixeira Automática</h2>
+          <hr>
+          <!-- Vídeo da Lixeira Automática -->
+          <video controls>
+            <source src="lixeira.mp4" type="video/mp4">
+          </video>
+          <p> Veja o funcionamento da lixeira automática que abre sua tampa ao detectar a aproximação de uma pessoa. Utilizamos sensores ultrassônicos e Arduino para automatizar a lixeira. </p>
+        </section>
+      </div>
+
+      <!-- Novo slide: Boné (Adicionado) -->
+      <div>
+        <section id="bone">
+          <h2>Boné Inteligente</h2>
+          <hr>
+          <img src="prrofdebone.jpg" alt="Boné Inteligente">
+          <p> Neste projeto, desenvolvemos um boné inteligente com um sensor de ré, projetado para ajudar pessoas com problemas de visão. O boné é capaz de detectar obstáculos atrás do usuário e emitir alertas, ajudando a evitar colisões e proporcionando maior segurança no deslocamento. </p>
+        </section>
+      </div>
+
+    </div>
+  </main>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.your-carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+
+      // Evento de clique nas imagens
+      $('.carousel-image').on('click', function() {
+        // Avança para o próximo slide
+        $('.your-carousel').slick('slickNext');
+      });
+    });
+  </script>
+<style>
+  .menu {
+    position: fixed; /* Fixa o botão na tela */
+  top: 0; /* Coloca o botão no topo da tela */
+  right: 10px; /* Coloca o botão 10px da borda direita da tela */
+  z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+  }
+  
+  button {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #18181a;
+    color: #18181a;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 18px 18px 17px;
+    text-decoration: none;
+    cursor: pointer;
+    background: #fff;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  button span:first-child {
+    position: relative;
+    transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 10;
+  }
+  
+  button span:last-child {
+    color: white;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 100;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateY(225%) translateX(-50%);
+    height: 14px;
+    line-height: 13px;
+  }
+  
+  button:after {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transform-origin: bottom center;
+    transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    transform: skewY(9.3deg) scaleY(0);
+    z-index: 50;
+  }
+  
+  button:hover:after {
+    transform-origin: bottom center;
+    transform: skewY(9.3deg) scaleY(2);
+  }
+  
+  button:hover span:last-child {
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 1;
+    transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+  }
+  </style>
+  
+  <div class="menu">
+    <a href="projetofinal.html"> <!-- Aqui é onde você define a URL da página inicial -->
+      <button>
+        <span class="text">Clique aqui para voltar ao menu</span>
+        <span>Obrigado!</span>
+      </button>
+    </a>
+  </div>
+</body>
+</html>

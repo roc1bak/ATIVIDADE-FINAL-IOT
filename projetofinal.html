@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+  
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('backgroundpf.jpg'); /* Caminho da imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a área disponível */
+    background-position: center center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Garante que a imagem não será repetida */
+    background-attachment: fixed; /* Faz com que a imagem fique fixa ao rolar a página */
+    position: relative;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente com opacidade */
+    z-index: -1; /* Faz com que o overlay de opacidade fique abaixo do conteúdo */
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+h1,h2 {
+    color: white; /* Deixa o título h2 branco */
+    margin-top: 30px;
+}
+
+nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    text-align: center !important;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.cards {
+    display: flex;
+    flex-direction: center;
+    gap: 30px;
+    margin: 120px;
+}
+
+.cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100px;
+    width: 250px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+    background-color: rgba(0, 0, 0, 0.5); /* Deixa o fundo do card transparente */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Adiciona uma borda branca semitransparente */
+}
+
+.cards .card a {
+    color: white; /* Links brancos */
+    text-decoration: none;
+}
+
+.cards .card p.tip {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.cards .card p.second-text {
+    font-size: .7em;
+}
+
+.cards .card:hover {
+    transform: scale(1.1, 1.15); /* hover = aumentar quando colocar o mouse em cima */
+}
+
+/* Estilos das classes para links */
+.CHSS, .CNT, .MAT, .lgg, .paginadogu, .IOT {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+}
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Página Inicial</h2>
+        <h2>Bem-vindo ao menu! Aqui você encontrará os links para todos os outros sites. Feito por Gustavo Rocumback.</p>
+    </main>
+    <div class="cards">
+        <div class="card purple">
+            <a href="meusgostos.html" class ="paginadogu" target="_blank">
+                <p class="tip">Página Pessoal</p>
+                <p class="second-text">Clique para acessar</p>
+            </a>
+        </div>
+        <div class="card yellow">
+            <a href="lgg.html" class ="lgg" target="_blank">
+                <p class="tip">Linguagens</p>
+                <p class="second-text">Clique para acessar</p>
+            </a>
+        </div>
+        <div class="card green">
+            <a href="CNT.html" class ="CNT" target="_blank">
+                <p class="tip">Ciências da Natureza</p>
+                <p class="second-text">Clique para acessar</p>
+            </a>
+        </div>
+        <div class="card orange">
+            <a href="CHS.html" class ="CHS" target="_blank">
+                <p class="tip">Ciências Humanas</p>
+                <p class="second-text">Clique para acessar</p>
+            </a>
+        </div>
+        <div class="card blue">
+            <a href="IOT.html" class ="IOT" target="_blank">
+                <p class="tip">Internet das Coisas</p>
+                <p class="second-text">Clique para acessar</p>
+            </a>
+        </div>
+        <div class="card grey">
+            <a href="MAT.html"class ="MAT" target="_blank">
+                <p class="tip">Matemática</p>
+                <p class="second-text">Clique para acessar</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

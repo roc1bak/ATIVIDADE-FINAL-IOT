@@ -1,0 +1,238 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linguagens</title>
+  <link rel="stylesheet" href="cssdetodasasareas.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <style>
+    /* Adicionando a imagem de fundo com gradiente de opacidade */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('lggimagem.jpg'); /* Caminho da imagem de fundo */
+      background-size: cover; /* Faz com que a imagem cubra toda a tela */
+      background-position: center; /* Centraliza a imagem */
+      background-attachment: fixed; /* Faz com que a imagem fique fixa ao rolar a página */
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%), url('lggimagem.jpg'); /* Gradiente com opacidade */
+    }
+
+    .your-carousel {
+      max-width: 800px;
+      margin: auto; /* Centraliza o carrossel */
+      margin-top: 10%;
+    }
+
+    section {
+      text-align: center; /* Centraliza o texto */
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.7); /* Fundo semi-transparente para destacar o conteúdo */
+      border-radius: 10px; /* Bordas arredondadas */
+    }
+
+    header {
+      background-color: #8B0000; /* Cor vermelha mais escura */
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    nav li {
+      margin-right: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    main {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 20px;
+      justify-content: space-around;
+    }
+
+    section h2 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .your-carousel img {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+    }
+
+    p {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: 20px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Linguagens</h1>
+  </header>
+  <main>
+    <div class="your-carousel">
+      <div>
+        <section id="artes">
+          <h2>Artes</h2>
+          <hr>
+          <p> O que é?</p>
+          <p> A Arte é uma expressão da criatividade humana em diversas formas, como pintura, escultura e música, fundamental para o desenvolvimento cultural e pessoal. </p>
+          <p> Atividade Favorita</p>
+          <p> Minha atividade favorita de Artes durante todos os anos do ensino médio foi o dia em que fizemos uma exposição de desenhos e pinturas </p>
+          <p> Professores e Matérias</p>
+          <p> Professora: Marcela | Matéria: Artes</p>
+        </section>
+      </div>
+      <div>
+        <section id="educacao-fisica">
+          <h2>Educação Física</h2>
+          <hr>
+          <p> O que é?</p>
+          <p> A Educação Física é a área que promove o desenvolvimento físico, motor e a prática de atividades esportivas, visando a saúde e o bem-estar. </p>
+          <p> Atividade Favorita</p>
+          <p> Minha atividade favorita de Educação Física durante todos os anos do ensino médio foi o campeonato de futebol entre as turmas </p>
+          <p> Professores e Matérias</p>
+          <p> Professor: José Ricardo | Matéria: Educação Física</p>
+        </section>
+      </div>
+      <div>
+        <section id="portugues">
+          <h2>Português</h2>
+          <hr>
+          <p> O que é?</p>
+          <p> O Português é a língua oficial do Brasil e é estudado para aprimorar a comunicação escrita e oral, além de abordar literatura e gramática. </p>
+          <p> Atividade Favorita</p>
+          <p> Minha atividade favorita de Português durante todos os anos do ensino médio foi a leitura e análise de livros literários </p>
+          <p> Professores e Matérias</p>
+          <p> Professora: Giselle | Matéria: Português</p>
+        </section>
+      </div>
+      <div>
+        <section id="ingles">
+          <h2>Inglês</h2>
+          <hr>
+          <p> O que é?</p>
+          <p> O Inglês é uma língua estrangeira amplamente utilizada no mundo todo, essencial para a comunicação internacional e acesso a culturas diversas. </p>
+          <p> Atividade Favorita</p>
+          <p> Minha atividade favorita de Inglês durante todos os anos do ensino médio foi a prática de conversação com os colegas </p>
+          <p> Professores e Matérias</p>
+          <p> Professora: Naja | Matéria: Inglês</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.your-carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+
+      // Evento de clique nas imagens
+      $('.carousel-image').on('click', function() {
+        // Avança para o próximo slide
+        $('.your-carousel').slick('slickNext');
+      });
+    });
+  </script>
+
+  <style>
+  .menu {
+    position: fixed; /* Fixa o botão na tela */
+    top: 0; /* Coloca o botão no topo da tela */
+    right: 10px; /* Coloca o botão 10px da borda direita da tela */
+    z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+  }
+  
+  button {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #18181a;
+    color: #18181a;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 18px 18px 17px;
+    text-decoration: none;
+    cursor: pointer;
+    background: #fff;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  button span:first-child {
+    position: relative;
+    transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 10;
+  }
+  
+  button span:last-child {
+    color: white;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 100;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateY(225%) translateX(-50%);
+    height: 14px;
+    line-height: 13px;
+  }
+  
+  button:after {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transform-origin: bottom center;
+    transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    transform: skewY(9.3deg) scaleY(0);
+    z-index: 50;
+  }
+  
+  button:hover:after {
+    transform-origin: bottom center;
+    transform: skewY(9.3deg) scaleY(2);
+  }
+  
